@@ -27,7 +27,8 @@ repositories {
 dependencies {
 	compile 'mysql:mysql-connector-java'
 	implementation('org.springframework.boot:spring-boot-starter-jdbc')
-	implementation('org.springframework.boot:spring-boot-starter-web')
+	implementation('org.springframework.boot:spring-boot-starter-web') 
+ compile group: 'org.springframework.data', name: 'spring-data-jdbc', version: '1.0.2.RELEASE'
 	implementation('org.codehaus.groovy:groovy')
 	runtimeOnly('mysql:mysql-connector-java')
 	testImplementation('org.springframework.boot:spring-boot-starter-test')
