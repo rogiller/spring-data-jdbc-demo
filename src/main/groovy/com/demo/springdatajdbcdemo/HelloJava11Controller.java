@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.RestController;
 import java.util.function.IntFunction;
 
 @RestController
-public class HelloJava11 {
+public class HelloJava11Controller {
 
     @GetMapping("/hello")
     public String hello(@RequestParam(required = false, defaultValue = "0") int number){
