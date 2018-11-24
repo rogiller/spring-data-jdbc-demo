@@ -5,6 +5,6 @@ import org.springframework.data.repository.CrudRepository
 
 interface ResourceRepo extends CrudRepository<Resource, String> {
 
-    @Query("select id, resource_name from st_biz_managed_resource limit 25")
+    @Query("select id, resource_name, created_by_date from st_biz_managed_resource limit 25")
     List<Resource> findLimited()
 }
